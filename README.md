@@ -39,7 +39,7 @@ Run the program:
 ```bash
 python autoclicker.py
 ```
-##Usage Instructions
+## Usage Instructions
 
 - Press S to start or stop the auto clicker.
 - Press E to exit the program.
