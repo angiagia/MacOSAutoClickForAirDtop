@@ -29,14 +29,19 @@ Ensure that Python is installed on your system. You can download it [here](https
 
 Install the required Python library using `pip`:
 
-```bash
+```
 pip install pynput
+```
+Or setup library using file requirement.txt
+
+```
+  pip install -r requirements.txt
 ```
 ##Running the Program
 Clone this repository or download the autoclicker.py file.
 Open a terminal in the project directory.
 Run the program:
-```bash
+```
 python autoclicker.py
 ```
 ## Usage Instructions
