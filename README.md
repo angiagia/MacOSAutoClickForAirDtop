@@ -46,7 +46,7 @@ python autoclicker.py
 ##Code Overview
 The core functionality is implemented in the AutoClicker class, which uses the pynput.mouse.Controller for mouse actions and pynput.keyboard.Listener to capture keyboard input.
 
-##Key Components
+## Key Components
 - Mouse Controller: Simulates mouse click actions.
 - Keyboard Listener: Listens for specific keypress events (S and E) to control the flow of the program.
 - Customizable Settings:
@@ -54,7 +54,7 @@ The core functionality is implemented in the AutoClicker class, which uses the p
   - button: Specifies the mouse button to be clicked.
   - start_stop_key: The key to toggle the auto clicker.
   - exit_key: The key to terminate the program.
-##Customizations
+## Customizations
 
 Change the Mouse Button
 To change the mouse button (e.g., right-click), modify this line in the code:
@@ -106,9 +106,9 @@ git push origin feature/YourFeature
 ```
 Open a pull request.
 
-##License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-##Contact
+## Contact
 
 For questions or support, please create an issue in the repository or reach out to [dogiaan91@gmail.com].
