@@ -2,10 +2,10 @@ import time
 from pynput.mouse import Button, Controller
 from pynput.keyboard import Listener, KeyCode
 
-# Cấu hình
-button = Button.left  # Loại click (trái chuột)
-start_stop_key = KeyCode(char='s')  # Nhấn phím 's' để bắt đầu/dừng
-exit_key = KeyCode(char='e')  # Nhấn phím 'e' để thoát
+# Configuration
+button = Button.left  # Click type (left mouse button)
+start_stop_key = KeyCode(char='s')  # Press 's' to start/stop
+exit_key = KeyCode(char='e')  # Press 'e' to exit
 
 class AutoHold:
     def __init__(self, button):
@@ -14,15 +14,15 @@ class AutoHold:
         self.program_running = True
 
     def start_holding(self):
-        print("Bắt đầu giữ chuột")
+        print("Start holding mouse")
         self.running = True
 
     def stop_holding(self):
-        print("Dừng giữ chuột")
+        print("Stop holding mouse")
         self.running = False
 
     def exit(self):
-        print("Thoát")
+        print("Exit")
         self.stop_holding()
         self.program_running = False
 

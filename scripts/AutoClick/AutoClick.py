@@ -2,11 +2,11 @@ import time
 from pynput.mouse import Button, Controller
 from pynput.keyboard import Listener, KeyCode
 
-# Cấu hình
-delay = 0.03  # Khoảng thời gian giữa các lần click (giây)
-button = Button.left  # Loại click (trái chuột)
-start_stop_key = KeyCode(char='s')  # Nhấn phím 's' để bắt đầu/dừng
-exit_key = KeyCode(char='e')  # Nhấn phím 'e' để thoát
+# Configuration
+delay = 0.03  # Delay between clicks (seconds)
+button = Button.left  # Click type (left mouse button)
+start_stop_key = KeyCode(char='s')  # Press 's' to start/stop
+exit_key = KeyCode(char='e')  # Press 'e' to exit
 
 class AutoClicker:
     def __init__(self, delay, button):
@@ -16,15 +16,15 @@ class AutoClicker:
         self.program_running = True
 
     def start_clicking(self):
-        print("Bắt đầu click")
+        print("Start clicking")
         self.running = True
 
     def stop_clicking(self):
-        print("Dừng click")
+        print("Stop clicking")
         self.running = False
 
     def exit(self):
-        print("Thoát")
+        print("Exit")
         self.stop_clicking()
         self.program_running = False
 
@@ -48,7 +48,7 @@ def on_press(key):
         clicker.exit()
         return False
 
-# Lắng nghe sự kiện bàn phím
+# Listen for keyboard events
 with Listener(on_press=on_press) as listener:
     clicker.run()
     listener.join()
